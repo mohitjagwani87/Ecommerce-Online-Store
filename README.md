@@ -702,19 +702,6 @@ Contributions to this project are welcome! Here are some ways you can contribute
 - Implement new features or enhancements and submit pull requests.
 - Improve documentation and README files.
 
-## License
-
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
-
-## Creator
-
-Fusion Electronics was created with ❤️ by:
-
-- **Son Nguyen** - [hoangsonww](https://github.com/hoangsonww)
-- **Email:** [hoangson091104@gmail.com](mailto:hoangson091104@gmail.com).
-
----
-
 Thank you for exploring **Fusion Electronics - a MERN Stack E-commerce Application**! If you have any questions or feedback, feel free to reach out or open an issue.
 
 **Happy coding! 🚀**
