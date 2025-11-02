@@ -95,7 +95,13 @@ if (!IS_VERCEL) {
     });
 } else {
   // Serverless: connect on first request via middleware (after body parsing)
+  // Exclude Swagger endpoints - they don't need database connection
   app.use(async (req, res, next) => {
+    // Skip MongoDB connection for Swagger endpoints
+    if (req.path === '/api-docs' || req.path === '/api-docs/swagger.json' || req.path === '/') {
+      return next();
+    }
+    
     try {
       await connectMongoDB();
       next();
