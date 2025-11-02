@@ -1,4 +1,5 @@
 const swaggerJSDoc = require('swagger-jsdoc');
+const path = require('path');
 
 // Swagger definition
 const swaggerDefinition = {
@@ -99,9 +100,11 @@ const swaggerDefinition = {
 };
 
 // Options for the swagger docs
+// Use absolute path for serverless compatibility
+const routesPath = path.join(__dirname, '../routes/*.js');
 const options = {
   swaggerDefinition,
-  apis: ['./routes/*.js'],
+  apis: [routesPath],
 };
 
 // Initialize swagger-jsdoc
